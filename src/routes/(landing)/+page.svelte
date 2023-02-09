@@ -107,6 +107,7 @@
 
 	footer {
 		text-align: center;
+		margin-bottom: 32px;
 		a {
 			color: inherit;
 		}
