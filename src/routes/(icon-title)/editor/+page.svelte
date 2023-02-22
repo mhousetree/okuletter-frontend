@@ -196,7 +196,6 @@
 
 		// @ts-ignore
 		penColors = backgroundColor?.penColors || [];
-		console.log(penColors);
 
 		if (get(backgroundIsDark) !== backgroundColor?.isDark) {
 			// @ts-ignore

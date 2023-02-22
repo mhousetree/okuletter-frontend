@@ -67,16 +67,6 @@
 	}
 
 	function gotoConfirm() {
-		console.log(
-			get(toName),
-			get(text),
-			get(fromName),
-			get(font),
-			get(background),
-			get(pen),
-			get(emvelope),
-			get(stamp)
-		);
 		goto('/confirm');
 	}
 </script>
