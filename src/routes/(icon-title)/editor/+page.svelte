@@ -447,6 +447,7 @@
 	}
 
 	#select_styles {
+		margin-bottom: 8rem;
 		text-align: center;
 		display: flex;
 		flex-direction: column;

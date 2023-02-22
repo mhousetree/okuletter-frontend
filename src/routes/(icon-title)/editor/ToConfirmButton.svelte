@@ -89,6 +89,8 @@
 	@import '../../colors.scss';
 
 	button {
+		position: fixed;
+		bottom: 0;
 		width: 100%;
 		padding: 12px;
 		display: flex;
@@ -100,7 +102,8 @@
 
 		&:disabled {
 			color: $navy;
-			background-color: rgba($navy, 0.2);
+			background-color: rgba(mix(mix($navy, $white), $white), 0.8);
+			backdrop-filter: blur(5px);
 		}
 	}
 </style>
