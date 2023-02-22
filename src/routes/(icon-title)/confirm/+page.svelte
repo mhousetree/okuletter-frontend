@@ -10,7 +10,7 @@
 		stamp,
 		backgroundIsDark
 	} from '../stores';
-	import { afterNavigate } from '$app/navigation';
+	import { afterNavigate, goto } from '$app/navigation';
 	import { get } from 'svelte/store';
 	import { colors } from '$lib/models/Color';
 	import { emvelopeColors } from '$lib/models/EmvelopeColors';
@@ -33,8 +33,6 @@
 		let stroke = '#fff';
 
 		if (['white', 'pink', 'yellow', 'lightblue'].includes(get(emvelope))) {
-			console.log('hoge');
-			console.log(document.getElementById('send'));
 			// @ts-ignore
 			document.getElementById('send_label').style.color = '#40445e';
 			stroke = 'none';
@@ -98,6 +96,8 @@
 		emvelope.set('');
 		stamp.set('');
 		backgroundIsDark.set(false);
+
+		goto('/send');
 
 		// const json = await res.json();
 		// console.log(json);
