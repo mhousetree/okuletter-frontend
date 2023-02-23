@@ -18,6 +18,8 @@
 			} catch (err) {}
 		} else {
 			if (navigator.clipboard) {
+				// @ts-ignore
+				document.getElementById('info').textContent = 'リンクをコピーしました！';
 				return navigator.clipboard.writeText(`${shareData.text} | ${shareData.url}`);
 			}
 		}
@@ -148,6 +150,7 @@
 	<h1>お手紙を作成しました！</h1>
 	<p>お手紙のリンクを伝えることで、<br />相手にお手紙を届けましょう。</p>
 	<button type="button" on:click={shareButtonClick}>お手紙が読めるリンクを共有</button>
+	<p id="info" />
 	<p class="sub">
 		共有に対応していない環境の場合、<br />お手紙のリンクがクリップボードにコピーされます。
 	</p>
