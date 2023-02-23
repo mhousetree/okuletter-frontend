@@ -72,6 +72,10 @@
 	}
 
 	async function sendLetter() {
+		document.getElementById('send')?.setAttribute('disabled', 'true');
+		// @ts-ignore
+		document.getElementById('send').style.opacity = '0.9';
+
 		const res = await fetch('https://87z0uz.deta.dev/letters', {
 			method: 'POST',
 			headers: { 'content-type': 'application/json' },
