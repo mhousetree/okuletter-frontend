@@ -7,7 +7,7 @@
 
 	const shareData = {
 		title: 'お手紙を確認する！',
-		text: 'Okuletterでお手紙を書きました！',
+		text: 'Okuletterでお手紙を書きました！ #okuletter',
 		url: `https://okuletter.vercel.app/letters/${get(letterId)}`
 	};
 
