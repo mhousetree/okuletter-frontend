@@ -37,14 +37,14 @@
 		</p>
 	</section>
 	<section>
-		<img src={icon} alt="dummy" />
+		<!-- <img src={icon} alt="dummy" /> -->
 		<p>
 			お手紙の色や書体、添えるシールを選んで<br />
 			1行からでも気軽なお手紙を送れます。
 		</p>
 	</section>
 	<section>
-		<img src={icon} alt="dummy" />
+		<!-- <img src={icon} alt="dummy" /> -->
 		<p>
 			いつもの文章じゃちょっと足りない気持ちを<br />
 			あなたが選んだ色のお手紙で伝えてみませんか？
