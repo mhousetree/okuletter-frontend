@@ -31,8 +31,6 @@
 		let stroke = '#fff';
 
 		if (['white', 'pink', 'yellow', 'lightblue'].includes(get(emvelope))) {
-			// @ts-ignore
-			document.getElementById('send_label').style.color = '#40445e';
 			stroke = 'none';
 		}
 
@@ -61,6 +59,11 @@
 		stamp.set('');
 	});
 </script>
+
+<svelte:head>
+	<title>お手紙を作成しました！ | Okuletter</title>
+	<meta name="description" content="お手紙の作成が完了しました。早速相手に届けましょう！" />
+</svelte:head>
 
 <section>
 	<div id="emvelope_wrapper">
@@ -154,6 +157,7 @@
 	<p class="sub">
 		共有に対応していない環境の場合、<br />お手紙のリンクがクリップボードにコピーされます。
 	</p>
+	<a href="/editor">もっとお手紙を書く！</a>
 </section>
 
 <style lang="scss">
@@ -172,6 +176,17 @@
 		border: none;
 		border-radius: 48px;
 		color: $white;
+		background-color: $pink;
+	}
+
+	a {
+		margin: 0 auto;
+		display: block;
+		width: fit-content;
+		padding: 8px 16px;
+		border-radius: 48px;
+		color: $white;
+		text-decoration: none;
 		background-color: $pink;
 	}
 
