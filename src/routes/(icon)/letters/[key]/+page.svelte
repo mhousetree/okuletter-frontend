@@ -74,7 +74,7 @@
 	a {
 		display: block;
 		width: fit-content;
-		margin: 0 auto;
+		margin: 0 auto 4rem;
 		background-color: $pink;
 		color: $white;
 		text-decoration: none;
