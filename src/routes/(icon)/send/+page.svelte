@@ -8,7 +8,7 @@
 	const shareData = {
 		title: 'Okuletter',
 		text: 'Okuletterでお手紙を書きました！',
-		url: `http://127.0.0.1:5173/letter/${get(letterId)}`
+		url: `https://okuletter.vercel.app/letter/${get(letterId)}`
 	};
 
 	async function shareButtonClick() {
