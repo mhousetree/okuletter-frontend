@@ -44,13 +44,14 @@
 	@import '../../../colors.scss';
 
 	article {
-		margin: 12px;
+		margin: 2rem 0 4rem;
 		padding: 16px;
 		border-radius: 4px;
 		opacity: 0;
 		transition-property: opacity;
 		transition-delay: 0.6s;
 		transition-duration: 0.3s;
+		box-shadow: 0 1px 16px rgba($navy, 0.1);
 	}
 
 	p {
