@@ -110,8 +110,8 @@
 </script>
 
 <svelte:head>
-	<title>お手紙の確認 | OKULETTER</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>お手紙の確認 | Okuletter</title>
+	<meta name="description" content="お手紙の内容を確認するページです。" />
 </svelte:head>
 
 <section id="confirm">

@@ -225,8 +225,8 @@
 </script>
 
 <svelte:head>
-	<title>お手紙エディタ | OKULETTER</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>お手紙エディタ | Okuletter</title>
+	<meta name="description" content="お手紙を作成するページです。" />
 </svelte:head>
 
 <section id="edit_letter">

@@ -28,6 +28,11 @@
 	});
 </script>
 
+<svelte:head>
+	<title>{letter.from_name}さんからのお手紙です。 | Okuletter</title>
+	<meta name="description" content={`${letter.from_name}さんからOkuletterでお手紙が届きました！`} />
+</svelte:head>
+
 <article>
 	<p>
 		{letter.to_name} へ

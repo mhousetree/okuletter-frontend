@@ -3,6 +3,14 @@
 	import icon from '$lib/images/icon.svg';
 </script>
 
+<svelte:head>
+	<title>Okuletter | インターネットお手紙作成サービス</title>
+	<meta
+		name="description"
+		content="Okuletterは、リンクを知っている人だけが読めるお手紙を書くことができるサービスです。"
+	/>
+</svelte:head>
+
 <header>
 	<p>手紙を書くように思いを伝える</p>
 	<h1>
