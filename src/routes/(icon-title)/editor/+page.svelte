@@ -548,6 +548,7 @@
 
 				img {
 					max-width: 120px;
+					aspect-ratio: 1;
 					width: 100%;
 				}
 			}
