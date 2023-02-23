@@ -9,3 +9,4 @@ export const pen = writable('');
 export const emvelope = writable('');
 export const stamp = writable('');
 export const backgroundIsDark = writable(false);
+export const letterId = writable('');

@@ -8,7 +8,8 @@
 		pen,
 		emvelope,
 		stamp,
-		backgroundIsDark
+		backgroundIsDark,
+		letterId
 	} from '../stores';
 	import { afterNavigate, goto } from '$app/navigation';
 	import { get } from 'svelte/store';
@@ -93,14 +94,14 @@
 		font.set('');
 		background.set('');
 		pen.set('');
-		emvelope.set('');
-		stamp.set('');
 		backgroundIsDark.set(false);
 
-		goto('/send');
+		const json = await res.json();
 
-		// const json = await res.json();
-		// console.log(json);
+		// @ts-ignore
+		letterId.set(json.key);
+
+		goto('/send');
 	}
 </script>
 
