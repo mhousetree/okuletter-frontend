@@ -6,7 +6,7 @@
 	import { stamps } from '$lib/models/Stamp';
 
 	const shareData = {
-		title: 'Okuletter',
+		title: 'お手紙を確認する！',
 		text: 'Okuletterでお手紙を書きました！',
 		url: `https://okuletter.vercel.app/letters/${get(letterId)}`
 	};
