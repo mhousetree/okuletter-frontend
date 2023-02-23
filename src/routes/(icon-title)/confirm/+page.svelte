@@ -202,7 +202,7 @@
 <style lang="scss">
 	@import '../../colors.scss';
 	#confirm {
-		margin: 0 12px;
+		margin: 0;
 		display: flex;
 		flex-direction: column;
 		gap: 32px;
@@ -245,6 +245,7 @@
 
 	#emvelope {
 		display: block;
+		max-width: 100%;
 	}
 
 	.emvelope-color {
@@ -252,9 +253,11 @@
 	}
 
 	a {
-		position: fixed;
+		position: absolute;
 		bottom: 0;
+		left: 0;
 		width: 100%;
+		max-width: 324px;
 		box-sizing: border-box;
 		padding: 12px;
 		display: flex;

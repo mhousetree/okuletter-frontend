@@ -8,8 +8,6 @@
 	 */
 	export let data;
 
-	console.log(data);
-
 	const letter = data.letter;
 
 	const pen = colors.find((color) => color.name === data.letter.pen)?.colorCode;

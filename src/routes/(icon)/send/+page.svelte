@@ -8,7 +8,7 @@
 	const shareData = {
 		title: 'Okuletter',
 		text: 'Okuletterでお手紙を書きました！',
-		url: `https://okuletter.vercel.app/letter/${get(letterId)}`
+		url: `https://okuletter.vercel.app/letters/${get(letterId)}`
 	};
 
 	async function shareButtonClick() {
@@ -174,6 +174,10 @@
 
 	#emvelope_wrapper {
 		position: relative;
+	}
+
+	#emvelope {
+		max-width: 100%;
 	}
 
 	#stamp {

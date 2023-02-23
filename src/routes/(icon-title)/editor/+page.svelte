@@ -426,7 +426,7 @@
 	}
 
 	#edit_letter {
-		padding: 0 12px;
+		padding: 0;
 		display: flex;
 		flex-direction: column;
 		row-gap: 8px;

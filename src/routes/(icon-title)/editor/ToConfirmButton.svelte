@@ -79,9 +79,11 @@
 	@import '../../colors.scss';
 
 	button {
-		position: fixed;
+		position: absolute;
 		bottom: 0;
+		left: 0;
 		width: 100%;
+		max-width: 324px;
 		padding: 12px;
 		display: flex;
 		justify-content: center;

@@ -6,7 +6,19 @@
 }
 
 body {
+  min-height: 100vh;
   margin: 0;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  background-color: #f6b7df;
+}
+body > div {
+  background-color: #fff;
+  position: relative;
+  box-sizing: border-box;
+  max-width: 324px;
+  padding: 0 12px;
 }
 
 input[type=text],
