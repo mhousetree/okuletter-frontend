@@ -40,7 +40,11 @@
 	<p>{letter.from_name} より</p>
 </article>
 
+<a href="/editor">Okuletterでお手紙を書いてみる！</a>
+
 <style lang="scss">
+	@import '../../../colors.scss';
+
 	article {
 		margin: 12px;
 		padding: 16px;
@@ -61,5 +65,16 @@
 
 	#text {
 		white-space: pre-wrap;
+	}
+
+	a {
+		display: block;
+		width: fit-content;
+		margin: 0 auto;
+		background-color: $pink;
+		color: $white;
+		text-decoration: none;
+		padding: 8px 16px;
+		border-radius: 32px;
 	}
 </style>
