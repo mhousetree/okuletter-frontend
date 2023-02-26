@@ -20,12 +20,28 @@
 		const target = document.querySelector('article');
 
 		// @ts-ignore
+		target.style.fontFamily = getFontFamily(letter.font);
+		// @ts-ignore
 		target.style.backgroundColor = background;
 		// @ts-ignore
 		target.style.color = pen;
 		// @ts-ignore
 		target.style.opacity = '1';
 	});
+
+	/**
+	 * @param {string} fontName
+	 */
+	 function getFontFamily(fontName) {
+		switch (fontName) {
+			case 'gothic':
+				return "'Noto Sans JP', sans-serif";
+			case 'marugothic':
+				return "'M PLUS Rounded 1c', sans-serif";
+			case 'mincho':
+				return "'Noto Serif JP', serif";
+		}
+	}
 </script>
 
 <svelte:head>
