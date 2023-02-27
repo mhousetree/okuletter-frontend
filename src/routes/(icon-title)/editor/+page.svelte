@@ -441,7 +441,8 @@
 
 		span {
 			display: block;
-			width: fit-content;
+			width: max-content;
+			word-break: keep-all;
 		}
 	}
 
