@@ -24,5 +24,6 @@
 	input {
 		flex-grow: 1;
 		height: 24px;
+		min-width: 0;
 	}
 </style>
