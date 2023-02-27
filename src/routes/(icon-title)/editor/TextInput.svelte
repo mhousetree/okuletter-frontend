@@ -19,3 +19,9 @@
 </script>
 
 <textarea name="text" id="text" rows="10" on:input={inputChecker} />
+
+<style>
+	textarea {
+		resize: vertical;
+	}
+</style>
