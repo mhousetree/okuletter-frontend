@@ -3,7 +3,8 @@ export async function load({ params }) {
 	, {
 		headers: {
 			"X-Space-App-Key": 'HprcHEzprBLrjN8xu6Dh5qqBAeWwz2Zc'
-		}
+		},
+		mode: 'cors'
 	}
 	);
 	return {
