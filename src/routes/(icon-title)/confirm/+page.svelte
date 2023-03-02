@@ -76,9 +76,11 @@
 		// @ts-ignore
 		document.getElementById('send').style.opacity = '0.9';
 
-		const res = await fetch('https://87z0uz.deta.dev/letters', {
+		const res = await fetch('https://okltrbackend-1-q1172794.deta.app/letters', {
 			method: 'POST',
-			headers: { 'content-type': 'application/json' },
+			headers: {
+				'content-type': 'application/json',
+			},
 			body: JSON.stringify({
 				from_name: get(fromName),
 				to_name: get(toName),
