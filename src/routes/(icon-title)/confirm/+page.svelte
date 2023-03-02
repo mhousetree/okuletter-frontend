@@ -82,7 +82,6 @@
 				'content-type': 'application/json',
 				'X-Space-App-Key': 'HprcHEzprBLrjN8xu6Dh5qqBAeWwz2Zc'
 			},
-			mode: 'cors',
 			body: JSON.stringify({
 				from_name: get(fromName),
 				to_name: get(toName),
