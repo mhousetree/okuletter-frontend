@@ -80,7 +80,6 @@
 			method: 'POST',
 			headers: {
 				'content-type': 'application/json',
-				'X-Space-App-Key': 'HprcHEzprBLrjN8xu6Dh5qqBAeWwz2Zc'
 			},
 			body: JSON.stringify({
 				from_name: get(fromName),
