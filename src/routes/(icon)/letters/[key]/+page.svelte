@@ -49,6 +49,11 @@
 	<meta name="description" content={`${letter.from_name}さんからOkuletterでお手紙が届きました！`} />
 </svelte:head>
 
+{#if letter.from_name === undefined}
+<p>お手紙のURLが間違っている、もしくはメンテナンス中です。</p>
+<p>お手数をお掛け致しますが、少し待ってからもう一度お手紙を開いてみてください。</p>
+<p>ごめんなさい！！</p>
+{:else}
 <article>
 	<p>
 		{letter.to_name} へ
@@ -58,6 +63,7 @@
 	</p>
 	<p>{letter.from_name} より</p>
 </article>
+{/if}
 
 <a href="/editor">Okuletterでお手紙を書いてみる！</a>
 
