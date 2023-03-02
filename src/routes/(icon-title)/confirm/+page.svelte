@@ -78,7 +78,11 @@
 
 		const res = await fetch('https://okltrbackend-1-q1172794.deta.app/letters', {
 			method: 'POST',
-			headers: { 'content-type': 'application/json' },
+			headers: {
+				'content-type': 'application/json',
+				'X-Space-App-Key': 'HprcHEzprBLrjN8xu6Dh5qqBAeWwz2Zc'
+			},
+			mode: 'cors',
 			body: JSON.stringify({
 				from_name: get(fromName),
 				to_name: get(toName),
