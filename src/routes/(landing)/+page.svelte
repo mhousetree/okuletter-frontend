@@ -1,6 +1,9 @@
 <script>
 	import logo from '$lib/images/logo.svg';
-	import icon from '$lib/images/icon.svg';
+	import landingLine from '$lib/images/landing/landing-line.png';
+	import landing01 from '$lib/images/landing/landing01.png';
+	import landing02 from '$lib/images/landing/landing02.png';
+	import landing03 from '$lib/images/landing/landing03.png';
 </script>
 
 <svelte:head>
@@ -20,6 +23,8 @@
 
 <main>
 	<section id="intro">
+		<img src={landingLine} alt="イラスト" class="landing-image" />
+
 		<p>
 			近況報告、いつもの感謝、作品の感想……<br />
 			住所は知らなくても「お手紙」を送りませんか？
@@ -28,20 +33,10 @@
 			Okuletterは、リンクを知っている人だけが読める<br />
 			お手紙を書くことができるサービスです。
 		</p>
-
-		
 		<a href="/editor" class="button">手紙を書く！</a>
-		<p class='note'>
-			みなさんへ(2023.3.2)<br /><br />
-			本日13時頃に発生していた「お手紙を作成・閲覧できない」不具合ですが、現在復旧が完了しています。<br />
-			該当の時間にお手紙を作成していただいた方には本当に申し訳ございません。<br />
-			このようなことがなるべく起きないよう、これからもできる限り頑張って開発をしていきますので、何卒よろしくお願いいたします。
-			<br /><br />
-			開発者より
-		</p>
 	</section>
 	<section>
-		<img src={icon} alt="dummy" />
+		<img src={landing02} alt="登録・連携一切無しで、お手軽にはじめられます。" class="landing-image" />
 		<p>
 			会員登録は不要です。<br />
 			お手紙は記名制、リンクを自分で<br />
@@ -55,10 +50,10 @@
 		</p>
 	</section>
 	<section>
-		<!-- <img src={icon} alt="dummy" /> -->
+		<img src={landing03} alt="色や書体などをカスタマイズして、自分色のお手紙を作れます。" class="landing-image" />
 		<p>
 			お手紙の色や書体、添えるシールを選んで<br />
-			1行からでも気軽なお手紙を送れます。
+			1行からでも気軽なお手紙を作ることができます。
 		</p>
 	</section>
 	<section>
@@ -68,10 +63,19 @@
 			あなたが選んだ色のお手紙で伝えてみませんか？
 		</p>
 		<a href="/editor" class="button">手紙を書く！</a>
+		<img src={landing01} alt="サービス名は「おくれた〜」と読みます。マスコットキャラの名前はえんぴつ生命体です。" class="landing-image" />
 	</section>
 </main>
 
 <footer>
+	<ul>
+		<li>
+			<a href="/updates">更新履歴</a>
+		</li>
+		<li>
+			<a href="https://note.com/kanadechankawai/n/n31491f3d9e8e" target="_blank" rel="noopener noreferrer">Okuletterについて</a>
+		</li>
+	</ul>
 	<small
 		>&copy; 2023 <a href="https://twitter.com/mhousetree" target="_blank" rel="noopener noreferrer"
 			>mhousetree</a
@@ -123,14 +127,25 @@
 		}
 
 		img {
+			display: block;
 			width: 300px;
-			max-width: 40%;
+			max-width: 80%;
+			margin: 24px auto;
 		}
 	}
 
 	footer {
 		text-align: center;
 		margin-bottom: 32px;
+
+		ul {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			gap: 1rem;
+		}
+
 		a {
 			color: inherit;
 		}
