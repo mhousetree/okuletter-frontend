@@ -120,7 +120,7 @@
 	<article id="letter_preview">
 		<p>{toNameValue} へ</p>
 		<p style="white-space: pre-wrap;">{textValue}</p>
-		<p>{fromNameValue} より</p>
+		<p class="align-right">{fromNameValue} より</p>
 	</article>
 	<p>
 		お手紙を完成させると、編集することはできません。<br />
@@ -219,7 +219,7 @@
 	}
 
 	#letter_preview {
-		padding: 16px;
+		padding: 24px 16px;
 		box-shadow: 0 1px 16px rgba($navy, 0.1);
 		border-radius: 4px;
 
@@ -256,6 +256,10 @@
 
 	.emvelope-color {
 		fill: white;
+	}
+
+	.align-right {
+		text-align: right;
 	}
 
 	a {

@@ -61,7 +61,7 @@
 	<p id="text">
 		{letter.text}
 	</p>
-	<p>{letter.from_name} より</p>
+	<p class="align-right">{letter.from_name} より</p>
 </article>
 {/if}
 
@@ -72,7 +72,7 @@
 
 	article {
 		margin: 2rem 0 4rem;
-		padding: 16px;
+		padding: 24px 16px;
 		border-radius: 4px;
 		opacity: 0;
 		transition-property: opacity;
@@ -85,7 +85,7 @@
 		margin: 0;
 
 		+ p {
-			margin-top: 1rem;
+			margin-top: 1.8rem;
 		}
 	}
 
@@ -102,5 +102,9 @@
 		text-decoration: none;
 		padding: 8px 16px;
 		border-radius: 32px;
+	}
+
+	.align-right {
+		text-align: right;
 	}
 </style>
